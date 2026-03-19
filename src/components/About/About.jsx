@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { FiCode, FiCpu, FiTarget, FiZap } from 'react-icons/fi'
+import { FiCode, FiCpu, FiTarget, FiZap, FiExternalLink, FiYoutube } from 'react-icons/fi'
 import profilePic from '../../Images/ProfilePic.jpg'
 import './About.css'
 
@@ -105,6 +105,28 @@ export default function About() {
                                 </motion.li>
                             ))}
                         </ul>
+
+                        {/* Website Links */}
+                        <div className="about-links">
+                            <a
+                                href="https://quadraticautomation.onrender.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="about-link-btn about-link-primary"
+                            >
+                                <FiExternalLink size={16} />
+                                Quadratic Automation
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@QuadraticAutomation"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="about-link-btn about-link-youtube"
+                            >
+                                <FiYoutube size={16} />
+                                YouTube Channel
+                            </a>
+                        </div>
                     </motion.div>
                 </div>
 
