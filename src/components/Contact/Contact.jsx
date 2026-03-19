@@ -1,12 +1,14 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FiMail, FiGithub, FiLinkedin, FiSend, FiMapPin } from 'react-icons/fi'
+import { FiMail, FiGithub, FiLinkedin, FiSend, FiMapPin, FiYoutube, FiInstagram } from 'react-icons/fi'
 import './Contact.css'
 
 const social = [
-    { icon: <FiMail size={22} />, label: 'Email', value: 'pk645245@gmail.com', href: 'pk645245@gmail.com', color: '#38bdf8' },
+    { icon: <FiMail size={22} />, label: 'Email', value: 'pk645245@gmail.com', href: 'mailto:pk645245@gmail.com', color: '#38bdf8' },
     { icon: <FiLinkedin size={22} />, label: 'LinkedIn', value: '/in/sonu-kumar-3b227b290', href: 'https://www.linkedin.com/in/sonu-kumar-3b227b290/', color: '#0a66c2' },
     { icon: <FiGithub size={22} />, label: 'GitHub', value: '@sumantpatel37819', href: 'https://github.com/sumantpatel37819', color: '#e2e8f0' },
+    { icon: <FiYoutube size={22} />, label: 'YouTube', value: '@QuadraticAutomation', href: 'https://www.youtube.com/@QuadraticAutomation', color: '#ff0000' },
+    { icon: <FiInstagram size={22} />, label: 'Instagram', value: '@quad.ratic.automation', href: 'https://www.instagram.com/quad.ratic.automation/', color: '#e1306c' },
 ]
 
 export default function Contact() {

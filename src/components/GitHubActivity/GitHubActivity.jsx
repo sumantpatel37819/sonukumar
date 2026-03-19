@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { FiGithub, FiStar, FiGitBranch, FiCode } from 'react-icons/fi'
 import './GitHubActivity.css'
 
-const GITHUB_USERNAME = 'sonukumar'
+const GITHUB_USERNAME = 'sumantpatel37819'
 
 const repos = [
     { name: 'autonomous-drone-ros', stars: 34, forks: 8, lang: 'Python', color: '#3572A5' },

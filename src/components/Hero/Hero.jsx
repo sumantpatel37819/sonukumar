@@ -131,7 +131,7 @@ export default function Hero() {
                             <HiOutlineDocumentDownload size={18} /> Download Resume
                         </a>
                         <a
-                            href="https://linkedin.com/in/sonukumar"
+                            href="https://www.linkedin.com/in/sonu-kumar-3b227b290/"
                             target="_blank"
                             rel="noreferrer"
                             className="btn btn-ghost hero-social"
@@ -139,7 +139,7 @@ export default function Hero() {
                             <FiLinkedin size={18} />
                         </a>
                         <a
-                            href="https://github.com/sonukumar"
+                            href="https://github.com/sumantpatel37819"
                             target="_blank"
                             rel="noreferrer"
                             className="btn btn-ghost hero-social"

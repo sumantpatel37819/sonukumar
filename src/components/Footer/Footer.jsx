@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail, FiHeart } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiHeart, FiYoutube, FiInstagram } from 'react-icons/fi'
 import { Link } from 'react-scroll'
 import { Link as RouterLink } from 'react-router-dom'
 import './Footer.css'
@@ -31,9 +31,11 @@ export default function Footer() {
                             perception, and embedded intelligence.
                         </p>
                         <div className="footer-socials">
-                            <a href="https://github.com/sonukumar" target="_blank" rel="noreferrer" className="footer-social-btn"><FiGithub size={18} /></a>
-                            <a href="https://linkedin.com/in/sonukumar" target="_blank" rel="noreferrer" className="footer-social-btn"><FiLinkedin size={18} /></a>
-                            <a href="mailto:sonu@example.com" className="footer-social-btn"><FiMail size={18} /></a>
+                            <a href="https://github.com/sumantpatel37819" target="_blank" rel="noreferrer" className="footer-social-btn"><FiGithub size={18} /></a>
+                            <a href="https://www.linkedin.com/in/sonu-kumar-3b227b290/" target="_blank" rel="noreferrer" className="footer-social-btn"><FiLinkedin size={18} /></a>
+                            <a href="https://www.youtube.com/@QuadraticAutomation" target="_blank" rel="noreferrer" className="footer-social-btn"><FiYoutube size={18} /></a>
+                            <a href="https://www.instagram.com/quad.ratic.automation/" target="_blank" rel="noreferrer" className="footer-social-btn"><FiInstagram size={18} /></a>
+                            <a href="mailto:pk645245@gmail.com" className="footer-social-btn"><FiMail size={18} /></a>
                         </div>
                     </div>
 
