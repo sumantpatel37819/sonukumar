@@ -9,12 +9,12 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <ThemeProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/sonukumar">   {/* ✅ ADD THIS */}
                 <Routes>
                     <Route path="/" element={<App />} />
                     <Route path="/ipr" element={<IPRPage />} />
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
-    </React.StrictMode>,
+    </React.StrictMode>
 )
