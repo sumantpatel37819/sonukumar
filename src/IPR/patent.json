@@ -1,0 +1,46 @@
+{
+    "type": "patent",
+    "title": "A Line-Marking Robot",
+    "patentNumber": "580928",
+    "applicationNumber": "202531048335",
+    "status": "Granted",
+    "filingDate": "2025-05-20",
+    "grantDate": "2026-02-18",
+    "validity": "20 years",
+    "patentee": "National Institute of Technology Patna",
+    "inventors": [
+        "Sonu Kumar",
+        "Satish Kumar",
+        "Gagan Deep Meena"
+    ],
+    "description": "An autonomous, high-precision line-marking robot designed to automatically draw sports field and ground markings using coordinate-based navigation and sensor fusion.",
+    "keyFeatures": [
+        "Autonomous coordinate-based navigation",
+        "GPS + IMU + AHRS sensor fusion",
+        "Stepper motor based propulsion system",
+        "Real-time GUI control and monitoring",
+        "Vision-based obstacle detection",
+        "High accuracy marking (~±1 cm)",
+        "Spray mechanism synchronized with position coordinates"
+    ],
+    "technologies": [
+        "Robotics",
+        "Autonomous Navigation",
+        "Sensor Fusion",
+        "Computer Vision",
+        "Embedded Systems"
+    ],
+    "organization": "National Institute of Technology Patna",
+    "certificateImage": "/assets/patents/line-marking-robot/certificate.jpg",
+    "drawings": [
+        "/assets/patents/line-marking-robot/fig1.png",
+        "/assets/patents/line-marking-robot/fig2.png",
+        "/assets/patents/line-marking-robot/fig3.png",
+        "/assets/patents/line-marking-robot/fig4.png",
+        "/assets/patents/line-marking-robot/fig5a.png",
+        "/assets/patents/line-marking-robot/fig5b.png"
+    ],
+    "links": {
+        "patentDocument": "/assets/patents/line-marking-robot/patent.pdf"
+    }
+}

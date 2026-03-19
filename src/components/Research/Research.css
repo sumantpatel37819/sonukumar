@@ -1,0 +1,168 @@
+.research-section {
+    background: var(--bg-primary);
+}
+
+.research-card {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 3px solid var(--primary);
+}
+
+.exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.exp-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.exp-category {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+}
+
+.exp-status {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 100px;
+}
+
+.status-active {
+    background: rgba(56, 189, 248, 0.12);
+    color: var(--primary);
+}
+
+.status-done {
+    background: rgba(34, 197, 94, 0.12);
+    color: var(--accent);
+}
+
+.exp-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.exp-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+.exp-metrics {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.metric-box {
+    flex: 1;
+    min-width: 170px;
+    text-align: center;
+    padding: 12px 8px;
+    border: 1px solid;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.metric-value {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+}
+
+.ipr-top {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.ipr-profile-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.ipr-profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+
+.ipr-feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ipr-pill {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    background: rgba(56, 189, 248, 0.08);
+}
+
+.ipr-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ipr-certificate-preview {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    object-fit: cover;
+    max-height: 340px;
+}
+
+@media (max-width: 768px) {
+    .ipr-top {
+        grid-template-columns: 1fr;
+    }
+
+    .ipr-profile-wrap {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .ipr-actions {
+        justify-content: stretch;
+    }
+
+    .ipr-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
