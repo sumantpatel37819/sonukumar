@@ -39,11 +39,11 @@ function App() {
             <main>
                 <Hero />
                 <About />
-                <Skills />
-                <Projects />
-                <Timeline />
                 <Research />
-                <GitHubActivity />
+                <Timeline />
+                <Projects />
+                <Skills />
+                
                 <Contact />
             </main>
             <Footer />
