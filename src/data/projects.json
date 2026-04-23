@@ -1,6 +1,34 @@
 [
     {
         "id": 1,
+        "title": "Quad-Falcon: An Autonomous Ground Vehicle Indoor and Outdoor Navigation System",
+        "description": "A Raspberry Pi and Arduino based AGV system for manual and autonomous navigation with live video streaming, sensor telemetry, indoor dead-reckoning, outdoor GPS tracking, and LiDAR-based obstacle detection.",
+        "longDescription": "This project is an in-progress Autonomous Ground Vehicle platform designed for both indoor and outdoor navigation. The Raspberry Pi 4B works as the high-level controller, running a FastAPI server for live telemetry, MJPEG camera streaming, WebSocket updates, and GUI command handling. The Arduino Mega works as the low-level controller, managing BTS7960 motor drivers, servo steering, GPS NEO-6M, TF-Luna LiDAR, ICM-20948 IMU, and battery voltage monitoring. The React dashboard provides live camera view, WASD/manual driving, speed control, emergency stop, battery status, LiDAR distance, IMU orientation, GPS map for outdoor navigation, and canvas-based indoor path tracking using dead-reckoning. Autonomous mode supports GPS waypoint movement with heading correction and LiDAR-based obstacle avoidance.",
+        "image": "agv",
+        "category": "Robotics and Autonomous Systems",
+        "featured": true,
+        "project_link": "",
+        "tags": [
+            "Autonomous Ground Vehicle",
+            "Raspberry Pi",
+            "Arduino Mega",
+            "Python",
+            "FastAPI",
+            "React",
+            "WebSocket",
+            "LiDAR",
+            "GPS",
+            "IMU",
+            "OpenCV",
+            "Indoor Navigation",
+            "Outdoor Navigation",
+            "Obstacle Avoidance"
+        ],
+        "github": "https://github.com/sumantpatel37819/Quad-Falcon",
+        "status": "In Progress"
+    },
+    {
+        "id": 2,
         "title": "Autonomous Drone for Disaster Relief",
         "description": "Jetson Nano powered autonomous drone using ROS2, PX4 flight stack, SLAM-based mapping, and real-time object detection for search and rescue missions in disaster areas.",
         "longDescription": "A fully autonomous UAV system designed for disaster relief operations. The drone uses PX4 for low-level flight control, ROS2 for high-level autonomy, and integrates SLAM for environment mapping without GPS dependency. Computer vision via YOLO detects survivors in real-time. Features waypoint mission planning, collision avoidance using LiDAR, and livestreamed telemetry.",
@@ -22,7 +50,7 @@
         "status": "In Progress"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "GPS Sports Ground Line Marking Robot",
         "description": "Autonomous robot that draws precise sports ground lines using GPS positioning, ESP32 control, and stepper motor-driven line marking mechanism.",
         "longDescription": "An innovative autonomous ground-marking robot that uses GPS coordinates to draw sports field lines with millimetre precision. The ESP32 microcontroller handles real-time motor control while a companion app uploads GPS waypoints. The chalk/paint dispenser is servo-controlled and triggered by the positioning logic.",
@@ -41,7 +69,7 @@
         "status": "Completed"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Gesture Control Robot",
         "description": "Hand gesture controlled robot using ADXL345 accelerometer sensor and ESP wireless modules for intuitive, cable-free robot control.",
         "longDescription": "A wireless robot controlled entirely through hand gestures captured by an ADXL345 3-axis accelerometer. Tilt your hand forward, back, left, or right to drive the robot in corresponding directions. Data is transmitted wirelessly via ESP-NOW protocol with sub-20ms latency.",
@@ -59,7 +87,7 @@
         "status": "Completed"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "AQI Monitoring System",
         "description": "IoT-based air quality monitoring system with real-time pollution data collection, cloud storage, and a live dashboard for environmental monitoring.",
         "longDescription": "A distributed IoT system that monitors air quality parameters including PM2.5, PM10, CO2, and NO2. Sensors feed data to an ESP32 hub which publishes to an MQTT broker. Data is visualised on a custom React dashboard with historical graphs, alerts, and geolocation mapping.",
@@ -79,7 +107,7 @@
         "status": "Completed"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Vision Robot using ESP32 Camera",
         "description": "Autonomous robot equipped with an ESP32-CAM module performing real-time image capture, streaming, and analysis using Python computer vision.",
         "longDescription": "A compact robot platform with an ESP32-CAM for real-time video streaming over WiFi. A Python server receives frames and runs image analysis (face detection, colour tracking, line following) using OpenCV. Control commands are sent back to the robot via WebSocket.",
@@ -92,25 +120,6 @@
             "Python",
             "WebSocket",
             "Computer Vision"
-        ],
-        "github": "https://github.com/sumantpatel37819",
-        "status": "Completed"
-    },
-    {
-        "id": 6,
-        "title": "SLAM Navigation with TurtleBot",
-        "description": "Implementing Simultaneous Localization and Mapping (SLAM) on TurtleBot using ROS and LiDAR for fully autonomous indoor navigation.",
-        "longDescription": "A ROS-based SLAM implementation using GMapping and AMCL for autonomous indoor navigation. The robot simultaneously builds a 2D occupancy grid map while localising itself within it using LiDAR sensor data. A custom path planner handles dynamic obstacles.",
-        "image": "slam",
-        "category": "Autonomous Systems",
-        "featured": false,
-        "tags": [
-            "ROS",
-            "SLAM",
-            "LiDAR",
-            "TurtleBot",
-            "Python",
-            "Autonomous Navigation"
         ],
         "github": "https://github.com/sumantpatel37819",
         "status": "Completed"

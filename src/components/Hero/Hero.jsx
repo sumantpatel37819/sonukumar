@@ -82,7 +82,7 @@ export default function Hero() {
                         custom={0.1}
                     >
                         <span className="badge-dot" />
-                        Available for opportunities
+                        B.Tech EE @ NIT Patna | Robotics Club VP
                     </motion.div>
 
                     <motion.h1
@@ -112,9 +112,9 @@ export default function Hero() {
                         animate="visible"
                         custom={0.5}
                     >
-                        I build <strong>intelligent robotic systems</strong> using computer vision,
-                        embedded electronics, and autonomous navigation. Currently working on autonomous
-                        drones, robotic systems and IoT devices.
+                        I build <strong>robotics and AI systems</strong> across autonomous drones,
+                        transmission-line inspection robots, computer vision pipelines, embedded control,
+                        and ML-powered web applications.
                     </motion.p>
 
                     <motion.div
@@ -127,8 +127,11 @@ export default function Hero() {
                         <Link to="projects" smooth duration={600} offset={-80}>
                             <button className="btn btn-primary">View Projects</button>
                         </Link>
-                        <a href="/resume.pdf" download className="btn btn-outline">
-                            <HiOutlineDocumentDownload size={18} /> Download Resume
+                        <a href={`${import.meta.env.BASE_URL}resume-robotics.pdf`} download className="btn btn-outline">
+                            <HiOutlineDocumentDownload size={18} /> Robotics Resume
+                        </a>
+                        <a href={`${import.meta.env.BASE_URL}resume-ai-ml.pdf`} download className="btn btn-outline">
+                            <HiOutlineDocumentDownload size={18} /> AI/ML Resume
                         </a>
                         <a
                             href="https://www.linkedin.com/in/sonu-kumar-3b227b290/"
@@ -176,7 +179,7 @@ export default function Hero() {
 }
 
 function TypewriterRoles() {
-    const roles = ['Robotics Engineer', 'AI Developer', 'Embedded Systems Engineer', 'Drone Builder']
+    const roles = ['Robotics Developer', 'AI/ML Developer', 'Embedded Systems Builder', 'Autonomous Drone Engineer']
     const [index, setIndex] = useState(0)
     const [displayed, setDisplayed] = useState('')
     const [deleting, setDeleting] = useState(false)

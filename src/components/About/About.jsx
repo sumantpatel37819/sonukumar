@@ -7,17 +7,17 @@ import './About.css'
 
 const stats = [
     { icon: <FiCode />, value: '15+', label: 'Projects Built' },
-    { icon: <FiCpu />, value: '20+', label: 'Technologies' },
-    { icon: <FiTarget />, value: 'SIH', label: 'Hackathon 2024' },
-    { icon: <FiZap />, value: '3+', label: 'Years Tinkering' },
+    { icon: <FiCpu />, value: 'B.Tech', label: 'EE, NIT Patna' },
+    { icon: <FiTarget />, value: 'IRoC-U', label: 'ISRO Challenge 2025' },
+    { icon: <FiZap />, value: 'VP', label: 'Robotics Club' },
 ]
 
 const focuses = [
-    'Autonomous drones & UAV systems',
-    'Robotic navigation with SLAM',
-    'Computer vision & AI perception',
-    'IoT & embedded monitoring systems',
-    'Hardware-software integration',
+    'AI-powered transmission-line inspection and predictive maintenance',
+    'Autonomous drones for inspection and disaster response',
+    'Computer vision pipelines with OpenCV, ML, and sensor data',
+    'Embedded systems using Arduino, ESP32, Raspberry Pi, and Jetson Nano',
+    'Flask, REST APIs, and AI web apps such as TourKaro',
 ]
 
 export default function About() {
@@ -64,7 +64,7 @@ export default function About() {
                         </div>
                         <div className="avatar-badge">
                             <FiCpu size={16} />
-                            Robotics Dev
+                            Robotics + AI
                         </div>
                     </motion.div>
 
@@ -76,21 +76,21 @@ export default function About() {
                         transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
                     >
                         <h3 className="about-heading">
-                            Building intelligent machines that combine AI, sensors & embedded systems
+                            Building intelligent machines that connect AI, power systems, sensors and embedded control
                         </h3>
                         <p className="about-bio">
-                            I'm a passionate robotics developer with hands-on experience designing and
-                            building autonomous systems from the ground up. My expertise spans from low-level
-                            firmware on microcontrollers like ESP32 and Raspberry Pi, all the way to
-                            high-level AI algorithms for perception and decision-making.
+                            I'm Sonu Kumar, a B.Tech Electrical Engineering student at National Institute
+                            of Technology Patna. My work sits at the intersection of robotics, AI/ML,
+                            computer vision, IoT, and power systems.
                         </p>
                         <p className="about-bio">
-                            I enjoy working at the intersection of <strong>hardware and software</strong> —
-                            where a line of code directly moves a motor or makes a drone navigate around
-                            an obstacle.
+                            I have worked on an <strong>AI-powered transmission-line inspection robot</strong>,
+                            5G-enabled disaster response drone concepts, ANAV autonomous drone for ISRO
+                            IRoC-U 2025, gesture-controlled robotics, and ML web applications. I also serve
+                            as Vice President of the Robotics Club at NIT Patna.
                         </p>
 
-                        <p className="about-focuses-title">My projects focus on:</p>
+                        <p className="about-focuses-title">My resume highlights include:</p>
                         <ul className="about-focuses">
                             {focuses.map((item, i) => (
                                 <motion.li

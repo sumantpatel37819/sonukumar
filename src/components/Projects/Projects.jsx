@@ -1,22 +1,41 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { FiGithub, FiExternalLink, FiStar } from 'react-icons/fi'
+import {
+    FiActivity,
+    FiCamera,
+    FiCode,
+    FiCpu,
+    FiExternalLink,
+    FiGithub,
+    FiGlobe,
+    FiMap,
+    FiNavigation,
+    FiStar,
+    FiWifi,
+    FiZap
+} from 'react-icons/fi'
 import projects from '../../data/projects.json'
 import './Projects.css'
 
-const categories = ['All', 'Autonomous Systems', 'Robotics', 'Computer Vision', 'IoT', 'IoT & Robotics']
+const categories = ['All', ...Array.from(new Set(projects.map(project => project.category)))]
 
 const ProjectIcon = ({ type }) => {
     const icons = {
-        drone: '🚁',
-        robot: '🤖',
-        gesture: '✋',
-        aqi: '🌿',
-        vision: '📷',
-        slam: '🗺️',
+        drone: <FiNavigation />,
+        robot: <FiCpu />,
+        gesture: <FiActivity />,
+        aqi: <FiWifi />,
+        vision: <FiCamera />,
+        slam: <FiMap />,
+        agv: <FiCpu />,
+        ai: <FiZap />,
+        ml: <FiActivity />,
+        web: <FiGlobe />,
+        inspection: <FiCamera />,
+        code: <FiCode />,
     }
-    return <span className="project-icon">{icons[type] || '⚙️'}</span>
+    return <span className="project-icon">{icons[type] || <FiCpu />}</span>
 }
 
 export default function Projects() {

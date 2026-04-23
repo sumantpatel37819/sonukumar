@@ -4,7 +4,7 @@ import { FiMail, FiGithub, FiLinkedin, FiSend, FiMapPin, FiYoutube, FiInstagram 
 import './Contact.css'
 
 const social = [
-    { icon: <FiMail size={22} />, label: 'Email', value: 'pk645245@gmail.com', href: 'mailto:pk645245@gmail.com', color: '#38bdf8' },
+    { icon: <FiMail size={22} />, label: 'Email', value: 'sonuk.ug23.ee@nitp.ac.in', href: 'mailto:sonuk.ug23.ee@nitp.ac.in', color: '#38bdf8' },
     { icon: <FiLinkedin size={22} />, label: 'LinkedIn', value: '/in/sonu-kumar-3b227b290', href: 'https://www.linkedin.com/in/sonu-kumar-3b227b290/', color: '#0a66c2' },
     { icon: <FiGithub size={22} />, label: 'GitHub', value: '@sumantpatel37819', href: 'https://github.com/sumantpatel37819', color: '#e2e8f0' },
     { icon: <FiYoutube size={22} />, label: 'YouTube', value: '@QuadraticAutomation', href: 'https://www.youtube.com/@QuadraticAutomation', color: '#ff0000' },
@@ -35,8 +35,8 @@ export default function Contact() {
                 <p className="section-sub-tag"><span className="tag">Say Hello</span></p>
                 <h2 className="section-title">Let's Build Something <span>Amazing</span></h2>
                 <p className="section-subtitle">
-                    Whether you have a project idea, collaboration proposal, or just want to connect —
-                    I'd love to hear from you.
+                    Whether you have a robotics project, AI/ML idea, research collaboration, or internship
+                    opportunity, I'd love to connect.
                 </p>
 
                 <div className="contact-layout">
@@ -49,13 +49,13 @@ export default function Contact() {
                     >
                         <h3 className="contact-info-title">Get In Touch</h3>
                         <p className="contact-info-text">
-                            I'm currently open to freelance projects, research collaborations, and full-time
-                            robotics engineering opportunities. Feel free to reach out through any of these channels.
+                            I'm currently open to robotics, embedded systems, computer vision, and AI/ML
+                            collaborations. You can reach me through my institute email or social profiles.
                         </p>
 
                         <div className="contact-location">
                             <FiMapPin size={16} />
-                            <span>India 🇮🇳 • Available Remote</span>
+                            <span>Patna, Bihar, India | Available Remote</span>
                         </div>
 
                         <div className="social-links">

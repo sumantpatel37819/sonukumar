@@ -4,65 +4,95 @@ import './Timeline.css'
 
 const events = [
     {
-        year: '2026',
-        title: '5G Innovation Hackathon',
-        subtitle: 'Qualified for Pragati Phase',
-        description: 'Developed a 5G-powered smart city solution with real-time sensor fusion and edge AI inference.',
+        year: '2025-Present',
+        title: 'Vice President, Robotics Club',
+        subtitle: 'NIT Patna',
+        description: 'Leading robotics activities, team coordination, technical mentoring, and project execution for club initiatives.',
+        type: 'role',
+        side: 'right'
+    },
+    {
+        year: 'Jul 2025-Present',
+        title: 'TourKaro AI Tourist Guide',
+        subtitle: 'Flask, Gemini API, REST APIs',
+        description: 'Developing an AI-driven tourist assistant with personalized trip planning, location insights, and an interactive chat interface.',
+        type: 'project',
+        side: 'left'
+    },
+    {
+        year: 'Mar-Sep 2025',
+        title: '5G-Enabled Disaster Response Drone',
+        subtitle: 'DoT Sponsored 5G Innovation Hackathon 2025',
+        description: 'Built a low-latency aerial monitoring concept with sensors and telemetry for reliable field-level data acquisition.',
         type: 'hackathon',
         side: 'right'
     },
     {
-        year: '2025',
-        title: 'Autonomous Drone Project',
-        subtitle: 'ROS2 + Jetson Nano + PX4',
-        description: 'Built a fully autonomous disaster-relief drone with SLAM navigation, real-time object detection, and mission planning.',
+        year: 'Dec 2024-Jun 2025',
+        title: 'AI-Powered Transmission-Line Inspection Robot',
+        subtitle: 'NIT Patna Research Project',
+        description: 'Applied computer vision and ML pipelines to detect cracks, wear, foreign objects, and inspection priorities for power systems.',
         type: 'project',
         side: 'left'
     },
     {
         year: '2025',
-        title: 'GPS Ground Marking Robot',
-        subtitle: 'ESP32 + GPS + Stepper Motors',
-        description: 'Autonomous robot that draws sports ground lines with millimetre GPS precision using ESP32 and stepper motor control.',
-        type: 'project',
-        side: 'right'
-    },
-    {
-        year: '2024',
-        title: 'Smart India Hackathon Nominee',
-        subtitle: 'SIH 2024',
-        description: 'Selected as a national nominee for Smart India Hackathon. Presented an IoT-based environmental monitoring system.',
+        title: 'ANAV Autonomous Drone',
+        subtitle: 'ISRO IRoC-U Challenge 2025',
+        description: 'Led a drone team that advanced through two rounds while integrating sensors, control logic, and real-time data acquisition.',
         type: 'hackathon',
-        side: 'left'
-    },
-    {
-        year: '2024',
-        title: 'AQI Monitoring System',
-        subtitle: 'ESP32 + MQTT + Dashboard',
-        description: 'Built a city-wide air quality monitoring network with distributed IoT nodes and a live React dashboard.',
-        type: 'project',
         side: 'right'
     },
     {
-        year: '2023',
-        title: 'Started Robotics Journey',
-        subtitle: 'First Arduino Robot',
-        description: 'Built first autonomous line-follower and began exploring ROS, computer vision, and embedded systems.',
-        type: 'milestone',
+        year: '2024',
+        title: 'DroneX & Kisan Drone Certifications',
+        subtitle: 'IIT Patna and Skill India',
+        description: 'Completed drone-focused certifications including DroneX and Kisan Drone Operator training.',
+        type: 'certification',
         side: 'left'
+    },
+    {
+        year: '2023-2025',
+        title: 'Technical Team Member, Robotics Club',
+        subtitle: 'NIT Patna',
+        description: 'Contributed to robotics builds, competitions, embedded systems projects, and club-level technical execution.',
+        type: 'role',
+        side: 'right'
+    },
+    {
+        year: '2023-2027',
+        title: 'B.Tech Electrical Engineering',
+        subtitle: 'National Institute of Technology Patna',
+        description: 'Studying electrical engineering with project work across power systems, control systems, robotics, and AI applications.',
+        type: 'education',
+        side: 'left'
+    },
+    {
+        year: '2022',
+        title: 'District Rank 3',
+        subtitle: 'Intermediate Science, BSEB',
+        description: 'Secured 91.2% in senior secondary and ranked third in district in Intermediate Science.',
+        type: 'award',
+        side: 'right'
     },
 ]
 
 const typeColors = {
     hackathon: '#f59e0b',
     project: '#38bdf8',
-    milestone: '#22c55e',
+    role: '#22c55e',
+    certification: '#fb923c',
+    education: '#818cf8',
+    award: '#f472b6',
 }
 
 const typeLabels = {
-    hackathon: '🏆',
-    project: '⚙️',
-    milestone: '🚀',
+    hackathon: 'H',
+    project: 'P',
+    role: 'R',
+    certification: 'C',
+    education: 'E',
+    award: 'A',
 }
 
 export default function Timeline() {
@@ -75,7 +105,7 @@ export default function Timeline() {
                 <p className="section-sub-tag"><span className="tag">Journey</span></p>
                 <h2 className="section-title">Experience & <span>Milestones</span></h2>
                 <p className="section-subtitle">
-                    A timeline of my robotics development journey, hackathons, and key projects.
+                    Resume-backed timeline covering research, hackathons, leadership, certifications, and education.
                 </p>
 
                 <div className="timeline">
@@ -88,7 +118,6 @@ export default function Timeline() {
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ delay: i * 0.15, duration: 0.6, ease: 'easeOut' }}
                         >
-                            {/* Center dot */}
                             <div className="timeline-dot" style={{ background: typeColors[ev.type] }}>
                                 {typeLabels[ev.type]}
                             </div>
