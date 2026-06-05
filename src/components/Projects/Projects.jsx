@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import {
@@ -82,12 +83,20 @@ export default function Projects() {
                                 ))}
                             </div>
                             <div className="proj-actions">
-                                <a href={proj.github} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
-                                    <FiGithub size={14} /> GitHub
-                                </a>
-                                <button className="btn btn-ghost btn-sm">
-                                    <FiExternalLink size={14} /> Details
-                                </button>
+                                {proj.github && (
+                                    <a href={proj.github} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
+                                        <FiGithub size={14} /> GitHub
+                                    </a>
+                                )}
+                                {proj.details_link ? (
+                                    <Link to={proj.details_link} className="btn btn-ghost btn-sm">
+                                        <FiExternalLink size={14} /> Details
+                                    </Link>
+                                ) : (
+                                    <button className="btn btn-ghost btn-sm">
+                                        <FiExternalLink size={14} /> Details
+                                    </button>
+                                )}
                             </div>
                         </motion.div>
                     ))}
@@ -131,12 +140,20 @@ export default function Projects() {
                                     ))}
                                 </div>
                                 <div className="proj-actions">
-                                    <a href={proj.github} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
-                                        <FiGithub size={13} /> GitHub
-                                    </a>
-                                    <button className="btn btn-ghost btn-sm">
-                                        <FiExternalLink size={13} /> Details
-                                    </button>
+                                    {proj.github && (
+                                        <a href={proj.github} target="_blank" rel="noreferrer" className="btn btn-outline btn-sm">
+                                            <FiGithub size={13} /> GitHub
+                                        </a>
+                                    )}
+                                    {proj.details_link ? (
+                                        <Link to={proj.details_link} className="btn btn-ghost btn-sm">
+                                            <FiExternalLink size={13} /> Details
+                                        </Link>
+                                    ) : (
+                                        <button className="btn btn-ghost btn-sm">
+                                            <FiExternalLink size={13} /> Details
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </motion.div>

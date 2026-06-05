@@ -1,5 +1,28 @@
 [
     {
+        "id": 7,
+        "title": "Aayiye — AI-Powered Travel Discovery Platform",
+        "description": "A full-stack, location-aware travel platform for Bihar and Kaimur featuring Gemini-powered recommendations, a route-optimized itinerary planner (solving TSP), streaming chatbot, and community sharing.",
+        "longDescription": "Aayiye is an AI-powered tourism platform for Bihar. It features a location-aware trending system that reverse-geocodes user coordinates to serve curated places. An interactive itinerary planner estimates costs and solves the Travelling Salesperson Problem (TSP) using a Nearest Neighbor algorithm to optimize routes. It includes an AI chatbot with Server-Sent Events (SSE) streaming, a community photo/video explore feed, and a multi-provider web search pipeline for smart summarization of web-sourced details.",
+        "image": "web",
+        "category": "Web Application & AI",
+        "featured": true,
+        "project_link": "https://aayiye.onrender.com",
+        "details_link": "/aayiye",
+        "tags": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "FastAPI",
+            "Gemini AI",
+            "SSE Streaming",
+            "TSP Optimization"
+        ],
+        "github": "https://github.com/sumantpatel37819/tourKaro",
+        "status": "In Progress"
+    },
+    {
         "id": 1,
         "title": "Quad-Falcon: An Autonomous Ground Vehicle Indoor and Outdoor Navigation System",
         "description": "A Raspberry Pi and Arduino based AGV system for manual and autonomous navigation with live video streaming, sensor telemetry, indoor dead-reckoning, outdoor GPS tracking, and LiDAR-based obstacle detection.",
