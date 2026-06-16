@@ -74,7 +74,8 @@ export default function Navbar() {
                     </button>
                     <a
                         href="/resume.pdf"
-                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="btn btn-primary nav-resume"
                     >
                         <FiDownload size={14} />
@@ -135,8 +136,8 @@ export default function Navbar() {
                             {isLight ? <FiMoon size={16} /> : <FiSun size={16} />}
                             {isLight ? 'Dark Mode' : 'Light Mode'}
                         </button>
-                        <a href="/resume.pdf" download className="btn btn-primary nav-mobile-resume">
-                            <FiDownload size={14} /> Download Resume
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary nav-mobile-resume">
+                            <FiDownload size={14} /> View Resume
                         </a>
                     </motion.div>
                 )}

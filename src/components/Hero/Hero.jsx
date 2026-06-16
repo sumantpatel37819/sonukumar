@@ -82,7 +82,7 @@ export default function Hero() {
                         custom={0.1}
                     >
                         <span className="badge-dot" />
-                        B.Tech EE @ NIT Patna | Robotics Club VP
+                        B.Tech EE @ NIT Patna | Robotics Club Vice President
                     </motion.div>
 
                     <motion.h1
@@ -127,12 +127,12 @@ export default function Hero() {
                         <Link to="projects" smooth duration={600} offset={-80}>
                             <button className="btn btn-primary">View Projects</button>
                         </Link>
-                        <a href={`${import.meta.env.BASE_URL}resume-robotics.pdf`} download className="btn btn-outline">
-                            <HiOutlineDocumentDownload size={18} /> Robotics Resume
+                        <a href={`${import.meta.env.BASE_URL}RESUME_2302071_SONU_MAIN (1).pdf`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                            <HiOutlineDocumentDownload size={18} /> View Resume
                         </a>
-                        <a href={`${import.meta.env.BASE_URL}resume-ai-ml.pdf`} download className="btn btn-outline">
+                        {/* <a href={`${import.meta.env.BASE_URL}resume-ai-ml.pdf`} download className="btn btn-outline">
                             <HiOutlineDocumentDownload size={18} /> AI/ML Resume
-                        </a>
+                        </a> */}
                         <a
                             href="https://www.linkedin.com/in/sonu-kumar-3b227b290/"
                             target="_blank"

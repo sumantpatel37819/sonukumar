@@ -9,7 +9,7 @@ const stats = [
     { icon: <FiCode />, value: '15+', label: 'Projects Built' },
     { icon: <FiCpu />, value: 'B.Tech', label: 'EE, NIT Patna' },
     { icon: <FiTarget />, value: 'IRoC-U', label: 'ISRO Challenge 2025' },
-    { icon: <FiZap />, value: 'VP', label: 'Robotics Club' },
+    { icon: <FiZap />, value: 'Vice President', label: 'Robotics Club' },
 ]
 
 const focuses = [

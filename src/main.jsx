@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from './App.jsx'
 import IPRPage from './pages/IPRPage.jsx'
 import AayiyePage from './pages/AayiyePage.jsx'
+import QuadFalconPage from './pages/QuadFalconPage.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import './index.css'
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path="/" element={<App />} />
                     <Route path="/ipr" element={<IPRPage />} />
                     <Route path="/aayiye" element={<AayiyePage />} />
+                    <Route path="/quad-falcon" element={<QuadFalconPage />} />
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>

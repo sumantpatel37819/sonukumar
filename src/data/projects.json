@@ -25,12 +25,13 @@
     {
         "id": 1,
         "title": "Quad-Falcon: An Autonomous Ground Vehicle Indoor and Outdoor Navigation System",
-        "description": "A Raspberry Pi and Arduino based AGV system for manual and autonomous navigation with live video streaming, sensor telemetry, indoor dead-reckoning, outdoor GPS tracking, and LiDAR-based obstacle detection.",
-        "longDescription": "This project is an in-progress Autonomous Ground Vehicle platform designed for both indoor and outdoor navigation. The Raspberry Pi 4B works as the high-level controller, running a FastAPI server for live telemetry, MJPEG camera streaming, WebSocket updates, and GUI command handling. The Arduino Mega works as the low-level controller, managing BTS7960 motor drivers, servo steering, GPS NEO-6M, TF-Luna LiDAR, ICM-20948 IMU, and battery voltage monitoring. The React dashboard provides live camera view, WASD/manual driving, speed control, emergency stop, battery status, LiDAR distance, IMU orientation, GPS map for outdoor navigation, and canvas-based indoor path tracking using dead-reckoning. Autonomous mode supports GPS waypoint movement with heading correction and LiDAR-based obstacle avoidance.",
+        "description": "A Raspberry Pi and Arduino based AGV system for campus monitoring and office document delivery. Features manual and autonomous navigation, live video streaming, indoor dead-reckoning, and GPS tracking.",
+        "longDescription": "This Autonomous Ground Vehicle (AGV) platform is designed for indoor navigation, campus monitoring, and office-to-office document delivery. The Raspberry Pi 4B acts as the high-level controller, running a FastAPI server for live telemetry, MJPEG camera streaming, WebSocket updates, and GUI command handling. The Arduino Mega handles low-level hardware control, managing motor drivers, servo steering, GPS NEO-6M, TF-Luna LiDAR, and ICM-20948 IMU. Operators can use the React-based dashboard for manual WASD driving, live monitoring, and sending autonomous waypoints. The robot supports outdoor GPS waypoint navigation and indoor IMU dead-reckoning.",
         "image": "agv",
         "category": "Robotics and Autonomous Systems",
         "featured": true,
-        "project_link": "",
+        "project_link": "https://github.com/sumantpatel37819/Quad-Falcon",
+        "details_link": "/quad-falcon",
         "tags": [
             "Autonomous Ground Vehicle",
             "Raspberry Pi",
