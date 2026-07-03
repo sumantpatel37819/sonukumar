@@ -9,6 +9,7 @@ import Research from './components/Research/Research'
 import GitHubActivity from './components/GitHubActivity/GitHubActivity'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Certificates from './components/Certificates/Certificates'
 import './App.css'
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
                 <Timeline />
                 <Projects />
                 <Skills />
+                <Certificates />
                 
                 <Contact />
             </main>

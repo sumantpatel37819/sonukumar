@@ -11,10 +11,11 @@ import './Navbar.css'
 const navItems = [
     { label: 'Home', to: 'hero', type: 'scroll' },
     { label: 'About', to: 'about', type: 'scroll' },
-    { label: 'IPR', to: '/ipr', type: 'route' },
+    { label: 'IPR', to: 'ipr', type: 'scroll' },
     { label: 'Experience', to: 'timeline', type: 'scroll' },
     { label: 'Projects', to: 'projects', type: 'scroll' },
     { label: 'Skills', to: 'skills', type: 'scroll' },
+    { label: 'Certificates', to: 'certificates', type: 'scroll' },
     { label: 'Contact', to: 'contact', type: 'scroll' },
 ]
 
