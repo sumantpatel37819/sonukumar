@@ -4,12 +4,20 @@ import './Timeline.css'
 
 const events = [
     {
+        year: '15 Dec 2025 – 7 Jul 2026',
+        title: 'ANAV Autonomous Drone — ISRO IRoC Challenge 2026',
+        subtitle: 'ISRO Robotics Challenge (IRoC 2026)',
+        description: 'Led team to the Elimination Round (3rd Round) after successfully qualifying through 1st Round (Preliminary Round) and 2nd Round (Qualification Round).',
+        type: 'hackathon',
+        side: 'right'
+    },
+    {
         year: '2025-Present',
         title: 'Vice President, Robotics Club',
         subtitle: 'NIT Patna',
         description: 'Leading robotics activities, team coordination, technical mentoring, and project execution for club initiatives.',
         type: 'role',
-        side: 'right'
+        side: 'left'
     },
     {
         year: 'Jul 2025-Present',
@@ -17,7 +25,7 @@ const events = [
         subtitle: 'Flask, Gemini API, REST APIs',
         description: 'Developing an AI-driven tourist assistant with personalized trip planning, location insights, and an interactive chat interface.',
         type: 'project',
-        side: 'left'
+        side: 'right'
     },
     {
         year: 'Mar-Sep 2025',
@@ -25,7 +33,7 @@ const events = [
         subtitle: 'DoT Sponsored 5G Innovation Hackathon 2025',
         description: 'Built a low-latency aerial monitoring concept with sensors and telemetry for reliable field-level data acquisition.',
         type: 'hackathon',
-        side: 'right'
+        side: 'left'
     },
     {
         year: 'Dec 2024-Jun 2025',
@@ -33,14 +41,6 @@ const events = [
         subtitle: 'NIT Patna Research Project',
         description: 'Applied computer vision and ML pipelines to detect cracks, wear, foreign objects, and inspection priorities for power systems.',
         type: 'project',
-        side: 'left'
-    },
-    {
-        year: '2025',
-        title: 'ANAV Autonomous Drone',
-        subtitle: 'ISRO IRoC-U Challenge 2025',
-        description: 'Led a drone team that advanced through two rounds while integrating sensors, control logic, and real-time data acquisition.',
-        type: 'hackathon',
         side: 'right'
     },
     {

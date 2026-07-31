@@ -8,7 +8,7 @@ import './About.css'
 const stats = [
     { icon: <FiCode />, value: '15+', label: 'Projects Built' },
     { icon: <FiCpu />, value: 'B.Tech', label: 'EE, NIT Patna' },
-    { icon: <FiTarget />, value: 'IRoC-U', label: 'ISRO Challenge 2025' },
+    { icon: <FiTarget />, value: 'IRoC 2026', label: 'ISRO Elimination Round' },
     { icon: <FiZap />, value: 'Vice President', label: 'Robotics Club' },
 ]
 
@@ -86,7 +86,7 @@ export default function About() {
                         <p className="about-bio">
                             I have worked on an <strong>AI-powered transmission-line inspection robot</strong>,
                             5G-enabled disaster response drone concepts, ANAV autonomous drone for ISRO
-                            IRoC-U 2025, gesture-controlled robotics, and ML web applications. I also serve
+                            IRoC Challenge 2026 (Elimination Round Qualifier), gesture-controlled robotics, and ML web applications. I also serve
                             as Vice President of the Robotics Club at NIT Patna.
                         </p>
 

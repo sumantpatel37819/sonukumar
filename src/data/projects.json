@@ -53,13 +53,15 @@
     },
     {
         "id": 2,
-        "title": "Autonomous Drone for Disaster Relief",
-        "description": "Jetson Nano powered autonomous drone using ROS2, PX4 flight stack, SLAM-based mapping, and real-time object detection for search and rescue missions in disaster areas.",
-        "longDescription": "A fully autonomous UAV system designed for disaster relief operations. The drone uses PX4 for low-level flight control, ROS2 for high-level autonomy, and integrates SLAM for environment mapping without GPS dependency. Computer vision via YOLO detects survivors in real-time. Features waypoint mission planning, collision avoidance using LiDAR, and livestreamed telemetry.",
+        "title": "Autonomous Drone for Disaster Relief (ANAV — ISRO IRoC Challenge 2026)",
+        "description": "Jetson Nano powered autonomous drone built for ISRO IRoC Challenge 2026, reaching the Elimination Round (Round 3) after qualifying through Preliminary & Qualification rounds.",
+        "longDescription": "A fully autonomous UAV system designed for disaster relief operations and built for the ISRO Robotics Challenge (IRoC 2026) running from 15 December 2025 to 7 July 2026. Reached the Elimination Round (3rd Round) with team after successfully qualifying through the 1st Round (Preliminary Round) and 2nd Round (Qualification Round). The drone uses PX4 for low-level flight control, ROS2 for high-level autonomy, and integrates SLAM for environment mapping without GPS dependency. Computer vision via YOLO detects survivors in real-time. Features waypoint mission planning, collision avoidance using LiDAR, and livestreamed telemetry.",
         "image": "drone",
         "category": "Autonomous Systems",
         "featured": true,
         "tags": [
+            "ISRO IRoC 2026",
+            "Elimination Round",
             "Jetson Nano",
             "ROS2",
             "PX4",
