@@ -1,5 +1,28 @@
 [
     {
+        "id": 9,
+        "title": "AI-Powered Transmission-Line Inspection Robot (TLIR)",
+        "description": "Autonomous robot operating directly on Extra High Voltage (EHV) lines using a two-wheel arm, 5G video telemetry, onboard AI damage detection, and electromagnetic induction self-charging.",
+        "longDescription": "An autonomous power-line monitoring robot designed to travel directly along Extra High Voltage (EHV) transmission lines using a specialized two-wheel robotic arm mechanism. Features camera video streaming and 5G network telemetry for remote wire monitoring. Onboard AI computer vision models inspect conductor wires and insulators in real time to detect physical damage, wear, and defects. Powered continuously through an electromagnetic induction energy-harvesting module derived directly from the EHV lines.",
+        "image": "inspection",
+        "category": "Robotics & AI",
+        "featured": true,
+        "details_link": "/tlir",
+        "tags": [
+            "EHV Power Lines",
+            "Two-Wheel Arm",
+            "5G Telemetry",
+            "AI Wire Inspection",
+            "Insulator Defect Detection",
+            "Electromagnetic Induction Charging",
+            "OpenCV",
+            "Python",
+            "Robotics"
+        ],
+        "github": "https://github.com/sumantpatel37819",
+        "status": "In Progress"
+    },
+    {
         "id": 7,
         "title": "Aayiye — AI-Powered Travel Discovery Platform",
         "description": "A full-stack, location-aware travel platform for Bihar and Kaimur featuring Gemini-powered recommendations, a route-optimized itinerary planner (solving TSP), streaming chatbot, and community sharing.",
@@ -33,6 +56,7 @@
         "project_link": "https://github.com/sumantpatel37819/Quad-Falcon",
         "details_link": "/quad-falcon",
         "tags": [
+            "B.Tech Minor Project",
             "Autonomous Ground Vehicle",
             "Raspberry Pi",
             "Arduino Mega",
@@ -53,27 +77,49 @@
     },
     {
         "id": 2,
-        "title": "Autonomous Drone for Disaster Relief (ANAV — ISRO IRoC Challenge 2026)",
-        "description": "Jetson Nano powered autonomous drone built for ISRO IRoC Challenge 2026, reaching the Elimination Round (Round 3) after qualifying through Preliminary & Qualification rounds.",
-        "longDescription": "A fully autonomous UAV system designed for disaster relief operations and built for the ISRO Robotics Challenge (IRoC 2026) running from 15 December 2025 to 7 July 2026. Reached the Elimination Round (3rd Round) with team after successfully qualifying through the 1st Round (Preliminary Round) and 2nd Round (Qualification Round). The drone uses PX4 for low-level flight control, ROS2 for high-level autonomy, and integrates SLAM for environment mapping without GPS dependency. Computer vision via YOLO detects survivors in real-time. Features waypoint mission planning, collision avoidance using LiDAR, and livestreamed telemetry.",
+        "title": "ANAV — Autonomous Mars Surface Exploration Drone (ISRO IRoC 2026)",
+        "description": "GPS-denied autonomous aerial vehicle (ANAV) engineered for Mars surface exploration, visual terrain mapping, and automated station docking. Contributed as Software & System Integration team member.",
+        "longDescription": "Designed and developed for the ISRO Robotics Challenge 2026 (IRoC 2026) running from 15 December 2025 to 7 July 2026. Served as Software & System Integration team member for the Autonomous Navigation Aerial Vehicle (ANAV) operating in Mars-analog, GPS-denied environments. Contributed to software modules for visual odometry, GPS-free localization, Mars surface inspection & terrain analysis, and autonomous precision landing on a base station for self-charging. Advanced with team to the Elimination Round (3rd Round) after qualifying through the 1st Round (Preliminary Round) and 2nd Round (Qualification Round).",
         "image": "drone",
         "category": "Autonomous Systems",
         "featured": true,
         "tags": [
             "ISRO IRoC 2026",
+            "Software & System Integration",
             "Elimination Round",
+            "GPS-Denied Navigation",
+            "Mars Surface Exploration",
+            "Self-Charging Station",
+            "ROS2",
+            "PX4",
+            "SLAM",
+            "C++",
+            "Python"
+        ],
+        "github": "https://github.com/sumantpatel37819",
+        "status": "In Progress"
+    },
+    {
+        "id": 8,
+        "title": "5G-Enabled Swarm Drone for Disaster & Border Surveillance",
+        "description": "Jetson Nano and 5G powered aerial monitoring system using ROS2, PX4, swarm technology, and real-time YOLO computer vision for border surveillance and disaster relief.",
+        "longDescription": "Developed for the DoT Sponsored 5G Innovation Hackathon 2025. Built a low-latency aerial monitoring concept leveraging 5G connectivity, swarm aerial navigation, PX4 low-level flight control, and ROS2 autonomy. Integrates SLAM for environment mapping and real-time survivor/threat detection via computer vision (YOLO), enabling rapid field data acquisition during disaster response and border surveillance.",
+        "image": "drone",
+        "category": "Autonomous Systems",
+        "featured": true,
+        "tags": [
+            "5G Hackathon",
+            "Swarm Technology",
+            "Disaster Monitoring",
+            "Border Surveillance",
             "Jetson Nano",
             "ROS2",
             "PX4",
             "SLAM",
-            "OpenCV",
-            "YOLO",
-            "MAVROS",
-            "Python",
-            "C++"
+            "YOLO"
         ],
         "github": "https://github.com/sumantpatel37819",
-        "status": "In Progress"
+        "status": "Completed"
     },
     {
         "id": 3,

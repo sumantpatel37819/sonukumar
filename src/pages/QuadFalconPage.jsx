@@ -40,6 +40,10 @@ export default function QuadFalconPage() {
     const [currentSlide, setCurrentSlide] = useState(0)
     const [activeTab, setActiveTab] = useState('hardware')
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const slides = [
         {
             img: dashboardImg,

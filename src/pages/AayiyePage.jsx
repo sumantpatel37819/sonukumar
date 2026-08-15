@@ -36,6 +36,10 @@ export default function AayiyePage() {
     const [currentSlide, setCurrentSlide] = useState(0)
     const [activeTab, setActiveTab] = useState('core')
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const slides = [
         {
             img: homeImg,

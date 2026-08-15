@@ -85,9 +85,9 @@ export default function About() {
                         </p>
                         <p className="about-bio">
                             I have worked on an <strong>AI-powered transmission-line inspection robot</strong>,
-                            5G-enabled disaster response drone concepts, ANAV autonomous drone for ISRO
-                            IRoC Challenge 2026 (Elimination Round Qualifier), gesture-controlled robotics, and ML web applications. I also serve
-                            as Vice President of the Robotics Club at NIT Patna.
+                            software & system integration for ANAV autonomous Mars drone in ISRO IRoC Challenge 2026 (Elimination Round Qualifier with team),
+                            5G-enabled swarm drones for disaster response & border surveillance, gesture-controlled robotics,
+                            and ML web applications. I also serve as Vice President of the Robotics Club at NIT Patna.
                         </p>
 
                         <p className="about-focuses-title">My resume highlights include:</p>

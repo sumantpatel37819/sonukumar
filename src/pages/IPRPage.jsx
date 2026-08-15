@@ -1,4 +1,5 @@
-﻿import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { FiArrowLeft, FiAward, FiCalendar, FiClock, FiFileText, FiMoon, FiSun, FiUsers } from 'react-icons/fi'
 import patentData from '../IPR/patent.json'
 import profilePic from '../Images/ProfilePic.jpg'
@@ -28,6 +29,10 @@ const cleanText = (value) => (value || '').replace(/\u00c2/g, '')
 
 export default function IPRPage() {
     const { isLight, toggleTheme } = useTheme()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const summaryCards = [
         { label: 'Patent Number', value: patentData.patentNumber, icon: <FiAward size={16} /> },

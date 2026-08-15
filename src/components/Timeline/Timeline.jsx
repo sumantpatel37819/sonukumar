@@ -4,12 +4,21 @@ import './Timeline.css'
 
 const events = [
     {
+        year: '19 Jan 2026 – Present',
+        title: 'Quad-Falcon: Autonomous AGV Indoor & Outdoor Navigation System',
+        subtitle: 'B.Tech Minor Project, NIT Patna',
+        description: 'Designed and built a Raspberry Pi 4B & Arduino Mega powered AGV featuring live telemetry dashboard, LiDAR obstacle avoidance, 2D SLAM, outdoor GPS waypoint navigation, and indoor IMU dead-reckoning.',
+        type: 'minor_project',
+        badgeLabel: 'Minor Project',
+        side: 'right'
+    },
+    {
         year: '15 Dec 2025 – 7 Jul 2026',
         title: 'ANAV Autonomous Drone — ISRO IRoC Challenge 2026',
-        subtitle: 'ISRO Robotics Challenge (IRoC 2026)',
-        description: 'Led team to the Elimination Round (3rd Round) after successfully qualifying through 1st Round (Preliminary Round) and 2nd Round (Qualification Round).',
+        subtitle: 'ISRO Robotics Challenge (Software & System Integration)',
+        description: 'Contributed as Software & System Integration team member for ANAV Mars autonomous drone, reaching the Elimination Round (3rd Round) with team after qualifying through 1st Round (Preliminary) and 2nd Round (Qualification).',
         type: 'hackathon',
-        side: 'right'
+        side: 'left'
     },
     {
         year: '2025-Present',
@@ -17,7 +26,7 @@ const events = [
         subtitle: 'NIT Patna',
         description: 'Leading robotics activities, team coordination, technical mentoring, and project execution for club initiatives.',
         type: 'role',
-        side: 'left'
+        side: 'right'
     },
     {
         year: 'Jul 2025-Present',
@@ -25,23 +34,23 @@ const events = [
         subtitle: 'Flask, Gemini API, REST APIs',
         description: 'Developing an AI-driven tourist assistant with personalized trip planning, location insights, and an interactive chat interface.',
         type: 'project',
-        side: 'right'
-    },
-    {
-        year: 'Mar-Sep 2025',
-        title: '5G-Enabled Disaster Response Drone',
-        subtitle: 'DoT Sponsored 5G Innovation Hackathon 2025',
-        description: 'Built a low-latency aerial monitoring concept with sensors and telemetry for reliable field-level data acquisition.',
-        type: 'hackathon',
         side: 'left'
     },
     {
-        year: 'Dec 2024-Jun 2025',
-        title: 'AI-Powered Transmission-Line Inspection Robot',
-        subtitle: 'NIT Patna Research Project',
-        description: 'Applied computer vision and ML pipelines to detect cracks, wear, foreign objects, and inspection priorities for power systems.',
-        type: 'project',
+        year: 'Mar-Sep 2025',
+        title: '5G-Enabled Border Surveillance & Disaster Response Drone',
+        subtitle: 'DoT Sponsored 5G Innovation Hackathon 2025',
+        description: 'Built a low-latency aerial monitoring concept with sensors and telemetry for reliable field-level data acquisition.',
+        type: 'hackathon',
         side: 'right'
+    },
+    {
+        year: 'Dec 2024-Jun 2025',
+        title: 'AI-Powered Transmission-Line Inspection Robot (TLIR)',
+        subtitle: 'NIT Patna Research Project',
+        description: 'Built a two-wheel arm robot traversing EHV transmission lines with 5G video telemetry, onboard AI wire/insulator defect detection, and electromagnetic induction self-charging.',
+        type: 'project',
+        side: 'left'
     },
     {
         year: '2024',
@@ -49,7 +58,7 @@ const events = [
         subtitle: 'IIT Patna and Skill India',
         description: 'Completed drone-focused certifications including DroneX and Kisan Drone Operator training.',
         type: 'certification',
-        side: 'left'
+        side: 'right'
     },
     {
         year: '2023-2025',
@@ -57,7 +66,7 @@ const events = [
         subtitle: 'NIT Patna',
         description: 'Contributed to robotics builds, competitions, embedded systems projects, and club-level technical execution.',
         type: 'role',
-        side: 'right'
+        side: 'left'
     },
     {
         year: '2023-2027',
@@ -65,7 +74,7 @@ const events = [
         subtitle: 'National Institute of Technology Patna',
         description: 'Studying electrical engineering with project work across power systems, control systems, robotics, and AI applications.',
         type: 'education',
-        side: 'left'
+        side: 'right'
     },
     {
         year: '2022',
@@ -73,11 +82,12 @@ const events = [
         subtitle: 'Intermediate Science, BSEB',
         description: 'Secured 91.2% in senior secondary and ranked third in district in Intermediate Science.',
         type: 'award',
-        side: 'right'
+        side: 'left'
     },
 ]
 
 const typeColors = {
+    minor_project: '#a855f7',
     hackathon: '#f59e0b',
     project: '#38bdf8',
     role: '#22c55e',
@@ -87,6 +97,7 @@ const typeColors = {
 }
 
 const typeLabels = {
+    minor_project: 'M',
     hackathon: 'H',
     project: 'P',
     role: 'R',
@@ -126,7 +137,7 @@ export default function Timeline() {
                                 <div className="tc-header">
                                     <span className="tc-year">{ev.year}</span>
                                     <span className="tc-badge" style={{ color: typeColors[ev.type], borderColor: typeColors[ev.type] + '44', background: typeColors[ev.type] + '14' }}>
-                                        {ev.type.charAt(0).toUpperCase() + ev.type.slice(1)}
+                                        {ev.badgeLabel || ev.type.charAt(0).toUpperCase() + ev.type.slice(1)}
                                     </span>
                                 </div>
                                 <h3 className="tc-title">{ev.title}</h3>
