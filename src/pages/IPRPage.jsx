@@ -87,7 +87,7 @@ export default function IPRPage() {
                         <div className="ipr-hero-right">
                             <div className="ipr-profile-card">
                                 <img src={profilePic} alt="Sonu Kumar profile" className="ipr-avatar" />
-                                <h3>{patentData.inventors[1] || patentData.inventors[0]}</h3>
+                                <h3>{patentData.inventors[0]}</h3>
                                 <p>Inventor</p>
                             </div>
                             <div className="ipr-org-card">
